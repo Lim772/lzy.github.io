@@ -1,0 +1,32 @@
+		body {
+			margin-top: 20px;
+			margin-left: 50px;
+		}
+		hr {
+			border: none;
+			height: 4px;
+			background-color: blue;
+			width: 50%;
+		}
+		h1 {
+			text-align: center;
+		}
+		img[alt="elon_musk"],
+		img[alt="bill_gate"],
+		img[alt="Tim_cook"] {
+			width: 250px;
+			height: 300px;
+			border: 6px solid;
+		}
+		img[alt="bill_gate"] {
+			float: right;
+		}
+		img[alt="Tim_cook"] {
+			vertical-align: bottom;
+			float: left;
+		}
+		font {
+			color: black;
+			font-size: large;
+			font-weight: bold;
+		}
