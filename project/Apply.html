@@ -3,7 +3,33 @@
 		<title>The University of Singapore</title>
 		<link rel=icon href=university_logo2.png type=image/jpg>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel=stylesheet href=university.css>
+		<link rel=stylesheet href="university.css">
+		<script>
+function validateForm(){
+	// to validate text - do not allow empty
+	let x = document.MyFirstForm.fname.value;
+	if (x==""){
+		alert("Please provide your First Name!");
+		return false;
+		}
+
+	// to validate text - only allow alphabet characters
+	let y = document.MyFirstForm.lname.value;
+	var letters = /^[A-Za-z]/;
+	if (!y.match(letters))
+	{
+		alert("Please input alphabet characters for Last Name.");
+		return false;
+	}
+
+	if ((MyFirstForm.gender[0].checked == false) && (MyFirstForm.gender[1].checked == false))
+	{
+	alert ("Please choose Gender: Male or Female");
+	return false
+	}
+}
+
+	</script>
 	</head>
 	<body>
 
@@ -28,41 +54,69 @@
 
   		<br><br><br>
   		<br><br><br><br>
-  		<br><br><br>
+  		<br>
   	
-		<center>
-		<form>  
-		<br>
-		<p style="background-color:powderblue;
-		color:#696969;font-family:verdana;
-		font-size:160%;	
-		text-align:center;
-		width:50%;height:60%;">
-		<br>
-		The University of Singapore
-		<br><br>
-		First Name: <input type=text name=fname size=40 maxlength=5> 
-		<br>
-		Last Name: <input type=text name=lname size=40 maxlength=5> 
-		<br>
-		Password: <input type=password name size=40 maxlength=5>
-		<br>
-		Gender:
-			<input type = radio name = gender value = Male> Male
-			<input type = radio name = gender value = Female> Female
-		<br>
-		Choose your favourite subjects:<br>
-			<input type=checkbox name=fav_sub value=DCS4103>DCS4103<br>
-			<input type=checkbox name=fav_sub value=DCS3003>DCS3003<br>
-			<input type=checkbox name=fav_sub value=MST1003>MST1003<br>
-			<input type=checkbox name=fav_sub value=MST2003>MST2003<br>
-		</p>
-		</form>  
-		</center>
+			<center>
+			<form name="MyFirstForm" onsubmit="return validateForm()">
+			<table>
+				<caption>The University of Singapore:</caption>
+					<tr>
+						<td width='40%' class='title'>First Name: </td>
+						<td><input type=text name=fname placeholder='First Name' autofocus></td>
+					</tr>
+
+					<tr>
+						<td class='title'>Last Name: </td>
+						<td><input type=text name=lname placeholder='Last Name' autofocus></td>
+					</tr>
+
+					<tr>
+						<td class='title'>Date of birth:</td>
+						<td><input type=date name=dob min=2000-01-01 max=2007-12-31></td>
+					</tr>
+
+					<tr>
+						<td class='title'>Gender: </td>
+						<td><input type = radio name = gender value = Male> Male
+						<input type = radio name = gender value = Female> Female
+						</td>
+					</tr>
+
+					<tr>
+						<td class='title'>Course:</td>
+						<td>
+						<select>
+							<option value="0">- List of Courses -</option>
+							<optgroup label="Choose a Courses">
+							<option value="DCS_S1">Business, Communication and Design</option>
+							<option value="DCS_S2">Artificial Intelligence & AI Safety</option>
+							<option value="DCS_S3">Engineering</option>
+							<option value="DCS_S4">Chemical Engineering</option>
+							</optgroup>
+
+						</select></td></tr>
+
+					<tr><td class='title'>Address:</td>
+						<td><textarea rows=4 cols=30 name=address></textarea></td>
+					</tr>
+
+					<tr>
+      			<td class='title'>Register password:</td>
+     				<td><input type="password" name="loginpass" id="password" minlength="10" maxlength="10">
+        		</td>
+    			</tr>
+
+			</table>
+		
+			<br><br>
+				<input type=submit value=Submit>
+				<input type=reset value=Reset>
+				</td></tr><br><br>
+			</form></center>
 
   		<br><br><br>
   		<br><br><br><br>
-  		<br><br><br>	
+  		<br>
 
 
   		<div class="design">
