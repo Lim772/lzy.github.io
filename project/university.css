@@ -443,149 +443,32 @@ footer p {
   background-color: #022070;
 }
 
-/* ----------- Responsive Styling ----------- */
-@media (max-width: 768px) {
-nav {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-nav img {
-  width: 150px;
-  margin-bottom: 10px;
-}
-
-nav .navigation ul {
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  align-items: flex-start;
-}
-
-.img h1 {
-  font-size: 180%;
-}
-
-.img p {
-  font-size: 90%;
-}
-
-.learn {
-  font-size: 16px;
-  padding: 10px 20px;
-}
-
-.highlight h2,
-.facilities h2,
-.course h3 {
-  font-size: 24px;
-}
-
-.hightlight-box,
-.row{
-  flex-direction: column;
-  align-items: center;
-}
-
-.hightlights,
-.facilities-col{
-  width: 90%;
-  height: auto;
-}
-
-.about {
-  flex-direction: column;
-  padding: 30px 5%;
-  gap: 40px;
-}
-
-.about-image img {
-  height: auto;
-  width: 100%;
-}
-
-.blog {
-  flex-direction: column;
-  padding: 30px 5%;
-  gap: 40px;
-}
-
-.blog-image img {
-  height: auto;
-  width: 100%;
-}
-
-footer {
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px 5%;
-  gap: 30px;
-}
-
-.location iframe {
-  width: 100%;
-}
-
-.contact-container {
-  flex-direction: column;
-  padding: 30px 5%;
-}
-
-.contact-info,
-.contact-form {
-  width: 100%;
-}
 
 /* -------Apply page--------- */
- .form-container {
-      max-width: 600px;
-      margin: 40px auto;
-      background-color: powderblue;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+table{
+width: 55%;
+font-family: Times New Roman;
+background-color: powderblue;
+font-size: 16pt;
+}
 
-    .form-container h2 {
-      text-align: center;
-      color: #696969;
-      margin-bottom: 20px;
-      font-size: 24px;
-    }
+caption {
+text-align:center;
+font-weight: bold;
+font-size: 20pt;
+height:50px;
+}
 
-    .form-group {
-      margin-bottom: 15px;
-      display: flex;
-      flex-direction: column;
-    }
+th, td {
+padding: 15px;
+height:20%;
+}
 
-    label {
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
+td.title {
+font-weight: bold;
+font-size: large;
+background-color: #01124d;
+color: #fff;
+}
 
-    input[type="text"],
-    input[type="password"] {
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-    }
-
-    .gender-options,
-    .checkbox-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .checkbox-group label,
-    .gender-options label {
-      font-weight: normal;
-    }
-
-    @media (max-width: 600px) {
-      .form-container {
-        margin: 20px;
-        padding: 20px;
-      }
+  
